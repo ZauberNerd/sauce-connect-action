@@ -6,6 +6,7 @@ let browser
     browser = await remote({
         user: process.env.SAUCE_USERNAME,
         key: process.env.SAUCE_ACCESS_KEY,
+        region: 'eu',
         capabilities: {
             browserName: 'chrome',
             platformName: 'Windows 10',
